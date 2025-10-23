@@ -13,8 +13,11 @@ public class PlayerMovementInfo
     public Vector3 dist = Vector3.zero;
 
     public bool movingFw = false;
-    public bool movinBk = false;
+    public bool movingBk = false;
+    public bool moving = false;
 
     public float baseSpeed;
     public float runAmp;
+
+    //check
 }
