@@ -195,7 +195,7 @@ public class BackgroundNpc : MonoBehaviour
                 }
 
 
-                if (Vector3.Distance(ChaseTarget.position, transform.position) < AttackRange)
+                if (ChaseTarget != null && Vector3.Distance(ChaseTarget.position, transform.position) < AttackRange)
                 {
                     brainState = BrainStates.ATTACKING;
                 }

@@ -117,7 +117,7 @@ MonoBehaviour:
   npcTalkTime: 60
   TalkBreakTime: 30
   maxTalkingDistance: 0.2
-  ChasingRange: 10
+  ChasingRange: 7
   AttackRange: 1
   IsOnStairs: 0
   wanderRegion: {fileID: 0}
