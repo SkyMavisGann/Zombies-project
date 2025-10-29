@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    public float range = 100f;
+
     private Camera fpsCamera;
     private float nextTimeToFire;
+
+    public ParticleSystem muzzleFlash;
 
     void Start()
     {
@@ -24,6 +28,7 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
+        muzzleFlash?.Play();
         RaycastHit hit;
 
         if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out hit, range))
@@ -33,6 +38,7 @@ public class Gun : MonoBehaviour
             {
                 target.Process(hit);
             }
+            nextTimeToFire = Time.time + 0.5f;
         }
     }
 
