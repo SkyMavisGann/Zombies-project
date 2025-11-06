@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/EnvironmentScene.unity
-    guid: ff6cb82beca996a40bf95e143d37614b
+    path: Assets/Scenes/RallyShootingGalleryScene.unity
+    guid: 92cd59eb9d7c07347832223903a87c7e
   m_configObjects: {}

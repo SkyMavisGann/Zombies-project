@@ -15,7 +15,7 @@ public class TargetStack : Target
     {
         targetRigidbody.AddForce(-hit.normal * impactForce);
 
-        //effectScript.Play(hit, hitSound, hitEffect, effectDuration);
+        effectScript.Play(hit, hitSound, hitEffect, effectDuration);
 
     }
 }
